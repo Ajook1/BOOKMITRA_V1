@@ -8,7 +8,7 @@ import {
   addToCart,
   addToWishlist,
   removeFromWishlist,
-  searchBooks
+  // searchBooks
 } from "../services/api";
 
 function Books({ refreshCartCount }) {
