@@ -42,26 +42,26 @@ function Books({ refreshCartCount }) {
     }
   };
 
-  const handleSearch = async (value) => {
-    setSearch(value);
+  // const handleSearch = async (value) => {
+  //   setSearch(value);
 
-    if (!value.trim()) {
-      const res = await getBooks();
-      if (res.data.status === "success") {
-        setBooks(res.data.data);
-      }
-      return;
-    }
+  //   if (!value.trim()) {
+  //     const res = await getBooks();
+  //     if (res.data.status === "success") {
+  //       setBooks(res.data.data);
+  //     }
+  //     return;
+  //   }
 
-    try {
-      const res = await searchBooks(value);
-      if (res.data.status === "success") {
-        setBooks(res.data.data);
-      }
-    } catch {
-      toast.error("Search failed");
-    }
-  };
+  //   try {
+  //     const res = await searchBooks(value);
+  //     if (res.data.status === "success") {
+  //       setBooks(res.data.data);
+  //     }
+  //   } catch {
+  //     toast.error("Search failed");
+  //   }
+  // };
 
   const handleAddToCart = async (inventoryId) => {
     try {
