@@ -16,7 +16,7 @@ function Books({ refreshCartCount }) {
 
   const [books, setBooks] = useState([]);
   const [wishlistIds, setWishlistIds] = useState([]); // inventory_ids
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   const [addedIds, setAddedIds] = useState([]);
 
   useEffect(() => {
