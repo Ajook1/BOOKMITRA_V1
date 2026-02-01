@@ -5,6 +5,8 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
+const PORT = process.env.PORT || 4000;
+
 
 // ================== MIDDLEWARES ==================
 app.use(cors());
@@ -74,6 +76,6 @@ app.use("/api/owner/orders", ownerOrdersRoutes);
 app.use("/api/owner/dashboard", ownerDashboardRoutes);
 
 // ================== SERVER START ==================
-app.listen(4000, () => {
-  console.log("🚀 Server running on port 4000");
-});
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});;
