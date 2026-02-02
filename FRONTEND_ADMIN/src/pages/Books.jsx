@@ -407,7 +407,7 @@ const Books = () => {
                 <tr key={book.inventory_id}>
                   <td>
                     <img
-                      src={`http://localhost:4000/${book.cover_image_url}`}
+                      src={`${import.meta.env.VITE_API_URL}/${book.cover_image_url}`}
                       style={{ width: 50 }}
                       alt=""
                     />
