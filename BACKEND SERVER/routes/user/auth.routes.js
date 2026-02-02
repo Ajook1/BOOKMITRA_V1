@@ -58,7 +58,12 @@ router.post("/signup", async (req, res) => {
             }
         }
 
-        return res.json(createResult("Signup failed"));
+        // return res.json(createResult("Signup failed"));
+
+      return res.status(500).json({
+  error: err.message,
+  sqlMessage: err.sqlMessage
+});
     }
 });
 
