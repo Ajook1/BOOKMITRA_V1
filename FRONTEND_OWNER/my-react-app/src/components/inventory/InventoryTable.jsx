@@ -61,7 +61,7 @@ const InventoryTable = ({ items, reload }) => {
                                         <img
                                             src={
                                                 item.cover_image_url
-                                                    ? `http://localhost:4000/${item.cover_image_url}`
+                                                    ? `${import.meta.env.VITE_API_URL}/${item.cover_image_url}`
                                                     : 'https://via.placeholder.com/50x70?text=No+Image'
                                             }
                                             alt={item.title}
