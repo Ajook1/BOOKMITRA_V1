@@ -116,7 +116,7 @@ function Books({ refreshCartCount }) {
           >
             <div className="card shadow-sm">
               <img
-                src={`${import.meta.env.VITE_API_URL}/${book.cover_image_url}`}
+                src={`${process.env.REACT_APP_API_URL}/${book.cover_image_url}`}
                 alt={book.title}
                 style={{
                   height: "220px",
