@@ -91,7 +91,7 @@ const Stores = () => {
                                                 <img
                                                     src={
                                                         store.store_image
-                                                            ? `http://localhost:4000/${store.store_image}`
+                                                            ? `${import.meta.env.VITE_API_URL}/${store.store_image}`
                                                             : 'https://via.placeholder.com/400x220?text=No+Image'
                                                     }
                                                     alt="Store"
