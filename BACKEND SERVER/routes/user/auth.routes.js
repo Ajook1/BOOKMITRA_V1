@@ -22,6 +22,9 @@ router.get("/test", (req, res) => {
 // routes/user/auth.js (or similar)
 
 router.post("/signup", async (req, res) => {
+  console.log("🔥 USER SIGNUP HIT");
+  console.log("👉 DB NAME:", process.env.DB_NAME);
+  console.log("👉 DB HOST:", process.env.DB_HOST);
     try {
         const { name, email, phone, password } = req.body;
 
