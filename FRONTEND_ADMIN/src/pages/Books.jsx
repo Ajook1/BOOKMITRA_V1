@@ -487,7 +487,7 @@ const Books = () => {
                   <div className="row">
                     <div className="col-md-4 text-center">
                       <img
-                        src={`http://localhost:4000/bookcovers/${selectedBook.cover_image_url}`}
+                        src={`${import.meta.env.VITE_API_URL}/bookcovers/${selectedBook.cover_image_url}`}
                         className="img-fluid rounded shadow"
                         style={{ maxHeight: "260px" }}
                         alt=""
