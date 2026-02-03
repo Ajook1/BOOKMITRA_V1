@@ -111,7 +111,7 @@ function Books({ refreshCartCount }) {
 
       <div className="row">
         {books.map((book) => (
-          console.log("cover_image_url =", book.cover_image_url);
+          
           <div
             key={book.inventory_id}
             className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
